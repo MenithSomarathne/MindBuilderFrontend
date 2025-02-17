@@ -1,0 +1,57 @@
+/* Full-page background */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Logo Styling */
+.logo {
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+/* Button Styling */
+.buttons {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 30px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.student {
+  background-color: #ff4d6d;
+}
+
+.parent {
+  background-color: #5bc37a;
+}
+
+.teacher {
+  background-color: #6b4ed4;
+}
+
+/* Illustration */
+.illustration img {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 30px;
+}
+
