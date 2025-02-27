@@ -1,0 +1,173 @@
+<div class="min-h-screen bg-gray-100">
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <h1 class="text-2xl font-bold text-gray-800">Admin Dashboard</h1>
+      <nav class="flex space-x-6">
+        <a class="text-gray-600 hover:text-blue-500 font-medium"
+           routerLink="/admin-dashboard">Dashboard</a>
+        <a class="text-gray-600 hover:text-blue-500 font-medium"
+           routerLink="/analytics">Analytics</a>
+        <a class="text-gray-600 hover:text-blue-500 font-medium"
+           routerLink="/settings">Settings</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="flex">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white h-screen shadow-lg fixed">
+      <div class="p-4">
+        <nav class="space-y-2">
+          <a class="block px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg"
+             routerLink="/admin-dashboard">Dashboard</a>
+          <a class="block px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg"
+             routerLink="/users">Users</a>
+          <a class="block px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg"
+             routerLink="/curriculum">Curriculum</a>
+          <a class="block px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg"
+             routerLink="/reports">Reports</a>
+          <a class="block px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg"
+             routerLink="/notifications">Notifications</a>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 ml-64 p-8 bg-white">
+      <!-- Welcome Section -->
+      <div class="bg-white flex items-center justify-center">
+
+      <div class="flex overflow-hidden w-full h-[60vh] items-center justify-center">
+        <div class="w-2/3 p-6">
+          <h1 class="text-4xl font-bold text-pink-600">Welcome to the Admin Dashboard</h1>
+          <p class="mt-2 text-gray-700">Manage your educational platform with ease</p>
+        </div>
+        <div class="w-2/3 flex items-center justify-center">
+          <img src="/mind1.png" alt="MindBuilder Logo" class="h-80">
+        </div>
+      </div>
+
+      </div>
+
+      <div class="container mx-auto my-10 mb-12">
+        <h2 class="text-4xl font-semibold text-center text-teal-500 mb-24">Recent Activities</h2>
+        <div class="flex justify-between mt-8 mb-32">
+          <div class="flex flex-col items-center text-center">
+            <div class="bg-white rounded-full p-4 shadow-lg">
+              <img src="/mind3.png" alt="Calendar Icon" class="w-12 h-12"/>
+            </div>
+            <p class="mt-2 font-medium">Uploaded new curriculum content</p>
+            <span class="text-gray-500">Mathematics</span>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <div class="bg-white rounded-full p-4 shadow-lg">
+              <img src="/mind4.png" alt="Chart Icon" class="w-12 h-12"/>
+            </div>
+            <p class="mt-2 font-medium">Analyzed student engagement data</p>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <div class="bg-white rounded-full p-4 shadow-lg">
+              <img src="/mind2.png" alt="Bullhorn Icon" class="w-12 h-12"/>
+            </div>
+            <p class="mt-2 font-medium">Sent notifications to all users</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center p-6">
+
+      <h1 class="text-4xl font-semibold text-teal-500 mb-32">Student Progress Overview</h1>
+
+      <div class="grid grid-cols-3 gap-2 w-full mb-32">
+
+        <div class="bg-white border rounded-lg p-4">
+          <p class="text-gray-500 font-light">Average Grade</p>
+          <p class="text-purple-600 text-2xl font-bold">B</p>
+          <p class="text-black">+5%</p>
+        </div>
+
+        <div class="bg-white border rounded-lg p-4">
+          <p class="text-gray-500">Engagement Rate</p>
+          <p class="text-purple-600 text-2xl font-bold">70%</p>
+          <p class="text-black">-3%</p>
+        </div>
+
+        <div class="bg-white border rounded-lg p-4">
+          <p class="text-gray-500">Platform Usage</p>
+          <p class="text-purple-600 text-2xl font-bold">25 hrs/week</p>
+          <p class="text-black">+10%</p>
+        </div>
+
+      </div>
+
+      </div>
+
+      <div>
+
+      <div class="w-full mx-auto p-6 mb-32">
+        <!-- Known Issues Section -->
+        <h2 class="text-4xl font-semibold text-teal-500 mb-24 text-center">Known Issues</h2>
+        <div class="grid grid-cos-1 md:grid-cols-2 gap-4 mb-24">
+          <div class="grid grid-cols-[1fr_4fr] gap-4 border border-gray-200 p-4 rounded">
+            <div class="h-20 w-20 bg-black"></div>
+            <div class="bg-white p-4">
+              <h3 class="text-lg font-semibold">Technical glitch in quiz module</h3>
+              <p class="text-gray-600">Working on fixing it promptly</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-[1fr_4fr] gap-4 border border-gray-200 p-4 rounded">
+            <div class="h-20 w-20 bg-black"></div>
+            <div class="bg-white p-4">
+              <h3 class="text-lg font-semibold">Feedback from teachers</h3>
+              <p class="text-gray-600">Requesting more training resources</p>
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+
+        <!-- Add New User Section -->
+        <h2 class="text-4xl font-semibold text-teal-500 mb-24 text-center">Add New User</h2>
+        <div class="bg-white p-6 shadow rounded mb-8">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="mb-4">
+              <label for="username" class="block text-sm font-medium text-gray-700">Name</label>
+              <input type="text" id="username" class="mt-1 block w-full p-2 border border-gray-300 rounded" placeholder="Enter user's name">
+            </div>
+            <div class="mb-4">
+              <span class="text-sm font-medium text-gray-700">Role</span>
+              <div class="flex space-x-2 mt-1">
+                <button class="px-4 py-2 bg-gray-200 rounded">Teacher</button>
+                <button class="px-4 py-2 bg-gray-200 rounded">Parent</button>
+                <button class="px-4 py-2 bg-gray-200 rounded">Student</button>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center mt-4">
+            <button class="w-2/6 bg-purple-600 text-white py-2 rounded">Create User</button>
+          </div>
+        </div>
+
+      </div>
+
+      </div>
+
+      <div class="flex justify-center items-center">
+        <div class="border-2 bg-gray-100 w-3/4 h-[25vh] flex justify-center items-center">
+          <p class="text-center text-lg text-black">Stay updated with the latest features and enhancements</p>
+        </div>
+      </div>
+
+
+      <!-- Time Display -->
+      <div class="mt-8 text-gray-500 text-sm">
+        11(12:00-15:00hbs)
+      </div>
+    </main>
+  </div>
+</div>

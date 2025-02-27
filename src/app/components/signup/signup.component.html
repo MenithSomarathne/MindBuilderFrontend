@@ -1,0 +1,23 @@
+<div class="signup-container">
+  <img src="/login.png" alt="SignupBackground" class="background-image">
+
+  <!-- Sign Up Box -->
+  <div class="signup-box">
+    <img src="logo.png" alt="MindBuilder Logo" class="logo">
+    <h2>Create an Account</h2>
+    <p>Join us and start your learning journey today!</p>
+
+    <form #signupForm="ngForm" (ngSubmit)="onSignUp(signupForm)">
+      <input type="text" placeholder="Enter Name" [(ngModel)]="name" name="name" required />
+      <input type="text" placeholder="Enter Email" [(ngModel)]="email" name="email" required />
+      <input type="password" placeholder="Enter Password" [(ngModel)]="password" name="password" required />
+      <input type="password" placeholder="Confirm Password" [(ngModel)]="confirmPassword" name="confirmPassword" required />
+      <button type="submit">Sign Up</button>
+    </form>
+
+    <div class="login-redirect">
+      <p>Already have an account?</p>
+      <button (click)="goToLogin()">Log In</button>
+    </div>
+  </div>
+</div>

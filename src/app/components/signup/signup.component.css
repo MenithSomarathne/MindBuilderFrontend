@@ -6,7 +6,7 @@ html, body {
 }
 
 /* Full Screen Background */
-.login-container {
+.signup-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,19 +24,19 @@ html, body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1; /* Keep the background behind the login form */
+  z-index: -1; /* Keep the background behind the sign-up form */
 }
 
-/* Login Box Styling */
-.login-box {
+/* Sign Up Box Styling */
+.signup-box {
   background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
   padding: 40px;
   border-radius: 15px;
   text-align: center;
   width: 400px;
-  max-width: 100%;
+  max-width: 90%; /* Ensure it is responsive */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  z-index: 1; /* Keeps the login box in front of the background */
+  z-index: 1; /* Keeps the sign-up box in front of the background */
 }
 
 /* Logo Styling */
@@ -46,7 +46,6 @@ html, body {
   height: auto;              /* Maintain aspect ratio */
   margin: 0 auto 20px;      /* Center the logo and add bottom margin */
 }
-
 
 /* Heading Styling */
 h2 {
@@ -77,7 +76,7 @@ input {
 }
 
 /* Button Styling */
-.butt {
+button {
   width: 90%;
   padding: 15px;
   font-size: 18px;
@@ -90,8 +89,32 @@ input {
   color: white;
 }
 
-.butt:hover {
+button:hover {
   transform: scale(1.05);
+}
+
+/* Redirect to Login Link Styling */
+.login-redirect {
+  margin-top: 20px;
+}
+
+.login-redirect p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.login-redirect button {
+  background-color: transparent;
+  color: #ff4d6d;
+  font-weight: normal;
+  border: 1px solid #ff4d6d;
+  padding: 10px 15px;
+}
+
+.login-redirect button:hover {
+  background-color: #ff4d6d;
+  color: white;
 }
 
 /* Forgot Password Link Styling */

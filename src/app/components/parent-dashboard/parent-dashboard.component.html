@@ -1,0 +1,145 @@
+<div class="container mx-auto p-6">
+  <!-- Navigation Bar -->
+  <div class="fixed top-0 left-0 w-full bg-white p-4 shadow-md z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl text-black font-bold">Parent Dashboard</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#" class="hover:text-blue-400 text-black">Progress</a></li>
+          <li><a href="#" class="hover:text-blue-400 text-black">Reports</a></li>
+          <li><a href="#" class="hover:text-blue-400 text-black">Suggestions</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Parent Profile Section -->
+  <div class="bg-teal-400 p-6 rounded-lg mt-32">
+    <div class="flex items-center">
+      <div class="w-16 h-16 bg-blue-300 rounded-full flex items-center justify-center mr-4">
+        <span class="text-white text-xl">P</span>
+      </div>
+      <div>
+        <h2 class="text-xl font-semibold">Parent's Name</h2>
+        <span class="text-gray-700">Parent</span>
+        <p class="text-gray-600">Keep track of your child's learning journey</p>
+      </div>
+    </div>
+    <div class="mt-4">
+      <a href="#" class="bg-purple-600 text-white py-2 px-4 rounded-lg hover:bg-purple-700">
+        View Profile
+      </a>
+    </div>
+  </div>
+
+  <div class="mt-4 flex justify-center">
+    <img src="/mind1.png" alt="MindBuilder" class="h-44" />
+  </div>
+</div>
+
+<!-- Progress Tracking Section -->
+<div class="bg-white">
+  <div class="container mx-auto p-10">
+    <h1 class="text-3xl font-bold text-pink-600">Progress Tracking</h1>
+    <p class="text-gray-600">Visual charts to track your child's progress</p>
+    <button class="mt-4 bg-purple-600 text-white py-2 px-4 rounded">View Details</button>
+
+    <!-- Two-column grid for progress cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10">
+      <div class="bg-white p-5 rounded-lg border border-gray-200">
+        <h2 class="text-lg font-semibold">English Alphabet</h2>
+        <p class="text-2xl font-bold">80%</p>
+        <p class="text-green-500">+5%</p>
+      </div>
+      <div class="bg-white p-5 rounded-lg border border-gray-200">
+        <h2 class="text-lg font-semibold">Numbers</h2>
+        <p class="text-2xl font-bold">75%</p>
+        <p class="text-red-500">-3%</p>
+      </div>
+      <div class="bg-white p-5 rounded-lg border border-gray-200">
+        <h2 class="text-lg font-semibold">Shapes</h2>
+        <p class="text-2xl font-bold">60%</p>
+        <p class="text-green-500">+3%</p>
+      </div>
+      <div class="bg-white p-5 rounded-lg border border-gray-200">
+        <h2 class="text-lg font-semibold">Sinhala</h2>
+        <p class="text-2xl font-bold">80%</p>
+        <p class="text-red-500">-3%</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Learning Progress Section -->
+<div class="mt-10 bg-white">
+  <div class="container mx-auto p-10">
+    <h2 class="text-lg font-semibold">Learning Progress</h2>
+    <div class="flex justify-center">
+      <!-- ✅ Updated: Replacing PrimeNG Chart with Chart.js canvas -->
+      <canvas id="lineChart"></canvas>
+    </div>
+  </div>
+</div>
+
+<!-- Learning Performance Reports Section -->
+<div class="bg-white py-10">
+  <div class="max-w-6xl mx-auto px-4">
+    <h1 class="text-4xl font-bold text-center text-teal-600">Learning Performance Reports</h1>
+    <p class="text-lg text-center text-gray-600 mt-2">Visual representation of learning performance in different categories</p>
+    <div class="text-center mt-4">
+      <a href="#" class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700">View Reports</a>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+      <!-- Column 1 -->
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <h2 class="text-xl font-semibold">English Alphabet</h2>
+        <p class="text-gray-500">Performance</p>
+        <div class="h-40 mt-4 border-2 border-gray-300 flex items-center justify-center">
+          <canvas id="barChart"></canvas>
+        </div>
+        <p class="text-gray-500 mt-2 text-right">Time</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Personalized Learning Suggestions -->
+<div class="bg-gray-100 p-6">
+  <div class="max-w-7xl mx-auto">
+    <h1 class="text-4xl font-bold text-teal-600">Personalized Learning Suggestions</h1>
+    <p class="text-lg text-gray-600 mt-2">Get tailored learning suggestions for your child</p>
+    <button class="mt-4 bg-purple-600 text-white font-semibold py-2 px-4 rounded">Explore Suggestions</button>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <div class="h-32 bg-gray-200 mb-4"></div>
+        <h2 class="text-xl font-semibold">English Number</h2>
+        <p class="text-gray-600">Recommended for your child</p>
+        <p class="mt-2">Engage in daily English Alphabet practice to improve skills</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Customizable Learning Settings -->
+<div class="bg-white flex flex-col items-center justify-center m-10">
+  <div class="text-center mb-8">
+    <h1 class="text-3xl font-bold text-teal-600">Customizable Learning Settings</h1>
+    <p class="text-gray-600">Adjust learning settings as per your child's needs</p>
+  </div>
+  <div class="flex space-x-4 mb-6">
+    <button class="bg-red-500 text-white font-bold py-2 px-4 rounded">English Alphabet</button>
+    <button class="bg-green-400 text-white font-bold py-2 px-4 rounded">Numbers</button>
+    <button class="bg-purple-600 text-white font-bold py-2 px-4 rounded">Shapes</button>
+    <button class="bg-purple-500 text-white font-bold py-2 px-4 rounded">Sinhala</button>
+  </div>
+  <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded">Save Settings</button>
+</div>
+
+<!-- Updates Section -->
+<div class="flex justify-center items-center m-20">
+  <div class="border-2 border-blue-400 bg-gray-200 w-3/4 h-56 flex justify-center items-center">
+    <p class="text-center text-lg text-black">Stay updated with the latest features and enhancements</p>
+  </div>
+</div>
